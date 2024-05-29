@@ -11,7 +11,7 @@
 L'ouverture d'un fichier permet de le préparer pour une opération de lecture ou d'écriture. En Python, cela se fait avec la fonction `open()`.
 
 ```python
-fichier = open("example.txt", "r")  # 'r' pour lecture, 'w' pour écriture, 'a' pour ajout
+fichier = open("talhaoui.txt", "r")  # 'r' pour lecture, 'w' pour écriture, 'a' pour ajout
 ```
 
 #### 2. Lecture de Fichier
@@ -27,7 +27,7 @@ lignes = fichier.readlines()  # Lit toutes les lignes dans une liste
 L'écriture dans un fichier est effectuée en utilisant la méthode `write()`.
 
 ```python
-fichier = open("example.txt", "w")
+fichier = open("talhaoui.txt", "w")
 fichier.write("Ceci est un exemple de texte.")
 ```
 
@@ -43,7 +43,7 @@ Lors de la manipulation des fichiers, il est important de gérer les erreurs pot
 
 ```python
 try:
-    fichier = open("example.txt", "r")
+    fichier = open("talhaoui.txt", "r")
     contenu = fichier.read()
 except FileNotFoundError:
     print("Le fichier n'existe pas.")
